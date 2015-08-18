@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+
+/* IMPORT START: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+@import url('typography.less');
+@import url('forms.less');
+
+/* NAV */
+.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button) {
+	background: @River;
+}
+
+@media only screen and (min-width: 40em) {
+	.top-bar {
+		//background: @River;
+		text-align: center; 
+	}
+
+	ul.center-buttons {
+		display: inline-block; 
+	}
+
+	.logo {
+		left: 5px;
+		top: -2px;
+		position: absolute;
+	} 
+}
+
+.logo {
+	max-width: 2rem;
+	margin-top: .5rem;
+	margin-left: 5px; 
+}
+
+.menu-icon {
+	padding-top: 1.2rem; 
+}
+
+
+body {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+/* IMPORT END | MEDIA QUERIES: LESS */
+@import url('mq-small.less');
+@import url('mq-medium.less');
+@import url('mq-large.less');

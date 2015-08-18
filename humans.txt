@@ -1,0 +1,30 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* COMPANY */
+	Company: Metamorphe
+	Site: metamorphe.us
+	Location: Seattle, WA
+
+/* OUR TEAM */
+	Name: Kat Garsi
+	Title: Co-Founder & UI/UX Developer
+	Site: katgarsi.com
+	Twitter: @heygarsi
+
+	Name: Lenny Peters
+	Title: Co-Founder & UI/UX Developer
+	Site: lennypeters.com
+	Twitter: @loonz206
+
+/* TECHNOLOGY */
+
+    HTML5, CSS, LESS
+    jQuery, Modernizr,
+    Bootstrap,
+    Gulp 
+
+/* THIS SITE */
+	Name: Yoga Peak Adventures
+	Website: yogapeakadventures.com
+	Launched: September 2015

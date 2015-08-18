@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+/* IMPORT START: LESS */
+/*** VARIABLES: LESS ***/
+/* COLOR SCHEME */
+/* IMPORT: FONT-FACE */
+@font-face {
+  font-family: 'arca_majoraheavy';
+  src: url('../fonts/arca-heavy-webfont.eot');
+  src: url('../fonts/arca-heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/arca-heavy-webfont.woff2') format('woff2'), url('../fonts/arca-heavy-webfont.woff') format('woff'), url('../fonts/arca-heavy-webfont.ttf') format('truetype'), url('../fonts/arca-heavy-webfont.svg#arca_majoraheavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* TYPOGRAPHY */
+/*** MIXINS: LESS ***/
+/**
+ * These are the functions used throughout the application. This is where
+ * overwrites that are not specific to components should be maintained.
+ */
+/* cubic-bezier, animationName, point-01, point-02, point-03, point-04 */
+/* loading animation */
+/* 1200px / 16px */
+/* 992px / 16px */
+/* 768px / 16px */
+/*** TYPOGRAPHY: LESS ***/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
+}
+a {
+  color: #92ccd4;
+}
+body {
+  color: #2a3d4d;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+}
+/*** FORMS: LESS ***/
+/* NAV */
+.top-bar,
+.top-bar-section ul li,
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #5e688f;
+}
+@media only screen and (min-width: 40em) {
+  .top-bar {
+    text-align: center;
+  }
+  ul.center-buttons {
+    display: inline-block;
+  }
+  .logo {
+    left: 5px;
+    top: -2px;
+    position: absolute;
+  }
+}
+.logo {
+  max-width: 2rem;
+  margin-top: .5rem;
+  margin-left: 5px;
+}
+.menu-icon {
+  padding-top: 1.2rem;
+}
+body {
+  background-color: red;
+}
+/* IMPORT END | MEDIA QUERIES: LESS */
+/*** SMALL DEVICES: LESS ***/
+/* Small devices (phones and tablets, 768px and up) */
+/*** MEDIUM DEVICES: LESS ***/
+/* Medium devices (desktops, 992px and up) */
+/*** LARGE DEVICES: LESS ***/
+/* Large devices (large desktops, 1200px and up) */
