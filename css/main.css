@@ -27,52 +27,409 @@
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
+  color: #5e688f;
+  text-transform: uppercase;
+}
+h1,
+h3 {
   font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
 }
-a {
+h2,
+h4 {
+  font-weight: 300;
+}
+h5 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 1.75em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3,
+h5 {
+  margin-top: 0;
+}
+a,
+a:visited {
   color: #92ccd4;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+a:hover,
+a:active {
+  color: #5e688f;
+  text-decoration: none;
+}
+i {
+  color: #ffffff;
+  font-size: 1em;
 }
 body {
   color: #2a3d4d;
   font-family: 'Raleway', Helvetica, arial, sans-serif;
 }
-/*** FORMS: LESS ***/
 /* NAV */
-.top-bar,
-.top-bar-section ul li,
-.top-bar-section li:not(.has-form) a:not(.button) {
-  background: #5e688f;
+nav {
+  font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
+  text-transform: uppercase;
 }
-@media only screen and (min-width: 40em) {
-  .top-bar {
-    text-align: center;
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #85a2c7;
+}
+/* MAIN */
+.more-link {
+  margin: 15px 0 25px;
+  font-size: 1.5em;
+}
+hr {
+  clear: both;
+  margin-bottom: 35px;
+}
+.about-hp h1,
+.about-hp p {
+  color: #ffffff;
+}
+/*** RESPONSIVE BACKGROUND IMAGE WITH MEDIA QUERIES***/
+/* Small screen, non-retina, DEFAULT */
+header {
+  background-color: #5e688f;
+  background: url(../img/main-peaks_sm_1x.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* Small screen, retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: '192dpi') and (min-width: 320px), only screen and (min-resolution: '2dppx') and (min-width: 320px) {
+  header {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_sm_2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  ul.center-buttons {
-    display: inline-block;
+}
+/* Medium screen, non-retina */
+@media only screen and (min-width: 768px) {
+  html,
+  body,
+  header {
+    min-height: 100%;
   }
-  .logo {
-    left: 5px;
-    top: -2px;
-    position: absolute;
+  header {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_md_1x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
-.logo {
-  max-width: 2rem;
-  margin-top: .5rem;
-  margin-left: 5px;
+/* Medium screen, retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: '192dpi') and (min-width: 768px), only screen and (min-resolution: '2dppx') and (min-width: 768px) {
+  header {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_md_2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
-.menu-icon {
-  padding-top: 1.2rem;
+/* Large screen, non-retina */
+@media only screen and (min-width: 1200px) {
+  header {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_lg_1x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
+/* Large screen, retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 1200px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min-resolution: '192dpi') and (min-width: 1200px), only screen and (min-resolution: '2dppx') and (min-width: 1200px) {
+  header {
+    background-color: #5e688f;
+    background: url(../img/main-peaks_lg_2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/*** FORMS: LESS ***/
+button,
+input[type="submit"] {
+  width: 175px;
+  height: 45px;
+  margin: 25px auto 50px;
+  background-color: #92ccd4;
+  border: none;
+  border-bottom: 2px solid #2a3d4d;
+  border-radius: 5px;
+  color: #2a3d4d;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+button:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="submit"]:focus {
+  background-color: #5e688f;
+  border-bottom: 2px solid #5e688f;
+  color: #ffffff;
+}
+form {
+  text-align: center;
+}
+form p {
+  margin-top: 0px;
+}
+input {
+  width: 175px;
+  height: 45px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+input[type="email"],
+input[type="text"] {
+  background-color: #e1e5e6;
+}
+html,
 body {
-  background-color: red;
+  height: 100%;
+}
+/*** NAV ***/
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.navbar-default {
+  background-color: #5e688f;
+  border-color: #5e688f;
+}
+.navbar-brand > img {
+  width: 30px;
+  height: 30px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #85a2c7;
+  border-bottom: 2px solid #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e1e5e6;
+}
+/* HAMBURGER */
+.navbar-default .navbar-toggle {
+  border: none;
+  width: 44px;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #2a3d4d;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #92ccd4;
+  border: none;
+}
+/*** HEADER IMAGE ***/
+header {
+  width: 100%;
+}
+header img {
+  width: 75%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  padding: 6em 0 4em;
+  vertical-align: middle;
+}
+/*** MAIN ***/
+section h1 {
+  margin-top: 40px;
+  padding: 5%;
+  text-align: center;
+}
+article {
+  margin-top: 10px;
+  padding: 0 5%;
+}
+/* HOMEPAGE - CALENDAR */
+.calendar-hp h2 {
+  margin-top: 0;
+}
+.calendar-hp img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 200px;
+}
+.calendar-hp-img,
+.calendar-hp-info {
+  float: left;
+}
+.calendar-hp-img {
+  width: 40%;
+}
+.calendar-hp-info {
+  width: 60%;
+}
+/* HOMEPAGE - SIGNUP */
+.signup-hp {
+  background-color: #d6ccc2;
+}
+.signup-hp h1 {
+  padding-top: 40px;
+}
+/* HOMEPAGE - QUOTE */
+.quote-hp {
+  padding: 0;
+}
+.quote-hp img {
+  width: 100%;
+}
+/* HOMEPAGE - BLOG */
+.blog-hp {
+  padding: 0 10%;
+}
+.blog-hp img {
+  width: 100%;
+}
+/* HOMEPAGE - SHOP */
+.shop-hp div {
+  width: 80%;
+  margin: auto;
+  max-width: 300px;
+}
+.shop-hp img {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+.shop-hp h2,
+.shop-hp h5 {
+  display: inline-block;
+  margin: 0;
+}
+.shop-hp h2 {
+  float: left;
+  width: 85%;
+}
+.shop-hp h5 {
+  float: right;
+  width: 10%;
+  padding-top: 5px;
+}
+.shop-hp p {
+  clear: both;
+}
+/* HOMEPAGE - INSTAGRAM */
+.instagram-hp {
+  padding: 0;
+}
+.instagram-hp img {
+  width: 100%;
+}
+/* HOMEPAGE - ABOUT */
+.about-hp {
+  background-color: #85a2c7;
+  padding-top: 40px;
+}
+.about-hp img {
+  width: 100%;
+}
+footer {
+  height: 100px;
+  clear: both;
+  background-color: #5e688f;
+  color: #ffffff;
+}
+footer p {
+  text-align: center;
+}
+footer p:first-child {
+  padding-top: 25px;
+  font-size: 1em;
+}
+footer p:nth-child(2) {
+  font-size: .85em;
+}
+footer a {
+  color: #ffffff;
+  text-transform: capitalize;
 }
 /* IMPORT END | MEDIA QUERIES: LESS */
 /*** SMALL DEVICES: LESS ***/
 /* Small devices (phones and tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav {
+    font-size: 1.25em;
+  }
+  header img {
+    max-width: 400px;
+    padding: 10% 0;
+  }
+  section h1 {
+    text-align: left;
+  }
+  .blog-hp h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .shop-hp h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 /*** MEDIUM DEVICES: LESS ***/
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header img {
+    max-width: 500px;
+    padding: 10% 0;
+  }
+  .shop-hp article {
+    display: inline-block;
+    float: left;
+  }
+  .shop-hp div {
+    width: 90%;
+    max-width: 400px;
+  }
+  .shop-hp hr {
+    clear: none;
+    display: none;
+  }
+}
 /*** LARGE DEVICES: LESS ***/
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header img {
+    max-width: 500px;
+    padding: 10% 0;
+  }
+}

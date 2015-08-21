@@ -1,1 +1,46 @@
 /*** FORMS: LESS ***/
+
+button, input[type="submit"] {
+	width: 175px;
+    height: 45px;
+	margin: 25px auto 50px;
+	background-color: @GlacialLake;
+    border: none;
+    border-bottom: 2px solid @NightSky;
+    border-radius: 5px;
+    color: @NightSky;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
+
+button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
+	background-color: @River;
+	border-bottom: 2px solid @River;
+	color: @White;
+}
+
+form {
+	text-align: center;
+	p {
+		margin-top: 0px;
+	}
+}
+
+input {
+	width: 175px;
+	height: 45px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	text-align: center;
+}
+
+input[type="email"], input[type="text"] {	
+	background-color: @Peace;
+}

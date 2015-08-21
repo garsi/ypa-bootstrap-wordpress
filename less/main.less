@@ -6,43 +6,198 @@
 @import url('variables.less');
 @import url('mixins.less');
 @import url('typography.less');
+@import url('responsive-background.less');
 @import url('forms.less');
 
-/* NAV */
-.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button) {
-	background: @River;
+html, body {
+    height:100%;
 }
 
-@media only screen and (min-width: 40em) {
-	.top-bar {
-		//background: @River;
-		text-align: center; 
+/*** NAV ***/
+nav {
+	position:fixed;
+	width: 100%;
+	z-index: 5;
+
+}
+
+.navbar-default {
+    background-color: @River;
+    border-color: @River;
+}
+
+.navbar-brand>img {
+	width: 30px;
+	height: 30px
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: @Himalaya;
+	border-bottom: 2px solid @White;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: @Peace;
+}
+
+/* HAMBURGER */
+.navbar-default .navbar-toggle {
+	border: none;
+	width: 44px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: @NightSky;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: @GlacialLake;
+	border: none;
+}
+
+/*** HEADER IMAGE ***/
+header {
+	width: 100%;
+	img {
+	    width: 75%;
+	    max-width: 300px;
+	    display: block;
+	    margin: auto;
+	    padding: 6em 0 4em;
+	    vertical-align: middle;
 	}
+}
 
-	ul.center-buttons {
-		display: inline-block; 
+/*** MAIN ***/
+section {
+	h1 {
+	margin-top: 40px;
+	padding: 5%;
+	text-align: center;
 	}
-
-	.logo {
-		left: 5px;
-		top: -2px;
-		position: absolute;
-	} 
 }
 
-.logo {
-	max-width: 2rem;
-	margin-top: .5rem;
-	margin-left: 5px; 
+article {
+	margin-top: 10px;
+	padding: 0 5%;
 }
 
-.menu-icon {
-	padding-top: 1.2rem; 
+/* HOMEPAGE - CALENDAR */
+.calendar-hp {
+	h2 {
+		margin-top: 0;
+	}
+	img {
+		display: block;
+		margin: auto;
+		width: 80%;
+		max-width: 200px;
+	}
 }
 
+.calendar-hp-img, .calendar-hp-info {
+	float: left;
+}
 
-body {
-	background-color: red;
+.calendar-hp-img {
+	width: 40%;
+}
+
+.calendar-hp-info {
+	width: 60%;
+}
+
+/* HOMEPAGE - SIGNUP */
+.signup-hp {
+	background-color: @InnerLight;
+	h1 {
+		padding-top: 40px;
+	}
+}
+
+/* HOMEPAGE - QUOTE */
+.quote-hp {
+	padding: 0;
+	img {
+		width: 100%
+	}
+}
+
+/* HOMEPAGE - BLOG */
+.blog-hp {
+	//margin-top: 25px;
+	padding: 0 10%;
+	img {
+		width: 100%
+	}
+}
+
+/* HOMEPAGE - SHOP */
+.shop-hp {
+	div {
+		width: 80%;
+		margin: auto;
+		max-width: 300px;
+	}
+	img {
+		width: 100%;
+		display: block;
+		margin: 10px auto;
+	}
+	h2, h5 {
+		display: inline-block;
+		margin: 0;
+	}
+	h2 {
+		float: left;
+		width: 85%;
+	}
+	h5 {
+		float: right;
+		width: 10%;
+		padding-top: 5px;
+	}
+	p {
+		clear: both;
+	}
+}
+
+/* HOMEPAGE - INSTAGRAM */
+.instagram-hp {
+	padding: 0;
+	img {
+		width: 100%
+	}
+}
+
+/* HOMEPAGE - ABOUT */
+.about-hp {
+	background-color: @Himalaya;
+	padding-top: 40px;
+	img {
+		width: 100%;
+	}
+}
+
+footer {
+	height: 100px;
+	clear: both;
+	background-color: @River;
+	color: @White;
+	p {
+		text-align: center;
+	}
+	p:first-child {
+		padding-top: 25px;
+		font-size: 1em;
+	}
+	p:nth-child(2) {
+		font-size: .85em;
+	}
+	a {
+		color: @White;
+		text-transform: capitalize;
+	}
 }
 
 
