@@ -2,9 +2,17 @@
 
 /* Small devices (phones and tablets, 768px and up) */
 @media (min-width: 768px) { 
+	p, h5 {
+		font-size: 1.2em;
+	}
+
 	nav {
 		font-size: 1.25em;
 	}
+
+	.navbar-nav.nav-justified > li{
+    float:none;
+}
 
 	header {
 		img {
@@ -13,21 +21,59 @@
 		} 
 	}
 
-	section h1 {
-		text-align: left;
+	.sm-hide {
+		display: none;
 	}
 
-	.blog-hp {
+	.about-hp-info, .about-hp-img {	
+		float: left;
+	}
+
+	.about-hp-info {
+		width: 60%;
+	}
+
+	.about-hp-img {
+		width: 40%;
+		img {
+			margin-top: 0;
+		}
+	}
+	
+	.signup-hp {
+		padding-bottom: 15px;
+	}
+
+	.signup-hp {
+		.mc-field-group {
+			width: 35%;
+			float: left;
+		}
+		input {
+			width: 95%;
+			height: 43px;
+		}
+		button, input[type="submit"] {
+			width: 28%;
+		}
+	}
+
+	.blog-hp, .shop-hp {
 		h1 {
 			margin-top: 0;
 			padding-top: 0;
 		}
 	}
 
-	.shop-hp {
-		h1 {
-			margin-top: 0;
-			padding-top: 0;
+	.post-hp {
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	.shop {
+		img {
+			max-width: 300px;
 		}
 	}
     

@@ -54,10 +54,10 @@
     <img src="img/Logo-finals_full-color.png.png">
   </header>
   <main class="container-fluid">
-    <div class="row"> <!-- start of new row -->
-      <section class="col-sm-6 col-lg-7 calendar-hp">
+    <div class="row">
+      <section class="calendar-hp"><!-- start of new row -->
         <h1>Upcoming Adventures</h1>
-        <article>
+        <article class="col-sm-6">
           <div class="calendar-hp-img">
             <img src="http://placehold.it/200x200"/>
           </div>
@@ -70,8 +70,8 @@
             <p class="more-link"><a href="#">Sign up &gt;</a></p>
           </div>
         </article>
-        <hr />
-        <article>
+        <hr class="sm-hide"/>
+        <article class="col-sm-6">
           <div class="calendar-hp-img">
             <img src="http://placehold.it/300x300"/>
           </div>
@@ -84,14 +84,26 @@
             <p class="more-link"><a href="#">Sign up &gt;</a></p>
           </div>
         </article>
-        <div>
+        <div class="col-xs-12">
           <button type="button">More Events &gt;</button>
         </div>
       </section>
-      <section class="col-sm-6 col-lg-5 signup-hp">
+    </div>
+    <div class="row"> <!-- start of new row -->
+      <section class="col-xs-12 about-hp">
+        <article> 
           <h1>Adventure is Calling</h1>
-          <article>
-          <p>Explore your edge and experience the great outdoors like never before. Hike to new peaks, flow together in nature and start living in the present moment.</p>
+          <div class="about-hp-info">  
+            <p>Explore your edge and experience the great outdoors like never before. Hike to new peaks, flow together in nature and start living in the present moment.</p>
+            <p>I'm Erin, and this is a little about me...</p>
+          </div>
+          <div class="about-hp-img">
+            <img src="img/erin-heyamoto-headshot.png">
+          </div>
+        </article>
+      </section>
+      <section class="col-xs-12 signup-hp">
+        <article>
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
             <form action="http://yogapeakadventures.us11.list-manage.com/subscribe/post?u=cab7e506c5033c62b38caaeb2&amp;id=bac29332ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -119,32 +131,50 @@
           </div> <!--End mc_embed_signup-->
         </article>
       </section>
-    </div> <!-- end row -->
+    </div> <!-- end of row-->
     <div class="row"> <!-- start of new row -->
-      <section class="col-sm-6 col-lg-5 quote-hp">
-        <img src="img/quote_mountain-are-calling.png"/>
-      </section>
-      <section class="col-sm-6 col-lg-7 blog-hp">
+      <section class="blog-hp">
         <h1>Mountain Talk</h1>
-        <article>
+        <article class="col-sm-6 post-hp">
           <div>
             <img src="img/blog-post_test-name.png" />
           </div>
-          <h2>Blog Post Title</h2>
-          <p>Toffee tart jelly-o fruitcake jelly beans cake candy bonbon fruitcake. Bonbon carrot cake tootsie roll cupcake. Pie dessert gummies danish powder lollipop liquorice.</p>
-          <p>Croissant jelly beans muffin ice cream croissant sugar plum carrot cake. Lemon drops pie tiramisu. Gummies tiramisu icing cookie chocolate bar cupcake ice cream.</p>
-          <p>Fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow strawberry cake.</p>
-          <p class="more-link"><a href="#">Keep Reading &gt;</a></p>
           <div>
-            <button type="button">More Posts &gt;</button>
+            <h2>Blog Post Title</h2>
+            <p>Toffee tart jelly-o fruitcake jelly beans cake candy bonbon fruitcake. Bonbon carrot cake tootsie roll cupcake. Pie dessert gummies danish powder lollipop liquorice.</p>
+            <p>Croissant jelly beans muffin ice cream croissant sugar plum carrot cake. Lemon drops pie tiramisu. Gummies tiramisu icing cookie chocolate bar cupcake ice cream.</p>
+            <p>Fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow strawberry cake.</p>
+            <p class="more-link"><a href="#">Keep Reading &gt;</a></p>
           </div>
         </article>
+        <hr class="sm-hide"/>
+        <article class="col-sm-6 post-hp">
+          <div>
+            <img src="img/blog-post_test-name.png" />
+          </div>
+          <div>
+            <h2>Blog Post Title</h2>
+            <p>Toffee tart jelly-o fruitcake jelly beans cake candy bonbon fruitcake. Bonbon carrot cake tootsie roll cupcake. Pie dessert gummies danish powder lollipop liquorice.</p>
+            <p>Croissant jelly beans muffin ice cream croissant sugar plum carrot cake. Lemon drops pie tiramisu. Gummies tiramisu icing cookie chocolate bar cupcake ice cream.</p>
+            <p>Fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow strawberry cake.</p>
+            <p class="more-link"><a href="#">Keep Reading &gt;</a></p>
+          </div>
+        </article>
+        <div>
+          <button type="button">More Posts &gt;</button>
+        </div>
       </section>
     </div> <!-- end row -->
     <div class="row"> <!-- start of new row -->
-      <section class="col-sm-6 col-lg-7 shop-hp">
+      <section class="instagram-hp">
+        <h1>Instagram @yogapeakadventures</h1>
+        <img src="img/instagram.png"/>
+      </section>
+    </div> <!-- end row -->
+    <div class="row"> <!-- start of new row -->
+      <section class="shop-hp">
         <h1>The Shop</h1>
-        <article>
+        <article class="col-sm-4">
           <div class="shop-hp-img">
             <img src="http://placehold.it/200x200"/>
           </div>
@@ -153,9 +183,20 @@
             <h5>$25</h5>
             <p class="more-link"><a href="#">Buy &gt;</a></p>
           </div>
-          <hr />
+          <hr class="sm-hide"/>
         </article>
-        <article>
+        <article class="col-sm-4">
+          <div class="shop-hp-img">
+            <img src="http://placehold.it/200x200"/>
+          </div>
+          <div class="shop-hp-info">
+            <h2>YPA Waterbottle</h2>
+            <h5>$25</h5>
+            <p class="more-link"><a href="#">Buy &gt;</a></p>
+          </div>
+        </article>
+        <hr class="sm-hide"/>
+        <article class="col-sm-4">
           <div class="shop-hp-img">
             <img src="http://placehold.it/200x200"/>
           </div>
@@ -169,27 +210,15 @@
             <button type="button">MORE TO SHOP &gt;</button>
         </div>
       </section>
-      <section class="col-sm-6 col-lg-5 instagram-hp">
-        <img src="img/instagram.png"/>
-      </section>
     </div> <!-- end row -->
-    <div class="row"> <!-- start of new row -->
-      <section class="about-hp">
-        <article>
-          <div class="col-xs-3 about-hp-img">
-            <img src="img/erin-heyamoto-headshot.png">
-          </div>
-          <div class="col-xs-9 about-hp-info">
-            <h1>About Erin</h1>
-            <p>Erin says this...</p>
-          </div>
-        </article>
-      </section>
-    </div>
   </main>
     <footer>
-      <p><i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-envelope-o"></i></p>
-      <p>Copyright 2015 Yoga Peak Adventures</p>
+      <p>
+        <a href="#" target="_new"><i class="fa fa-instagram"></i></a>
+        <a href="#" target="_new"><i class="fa fa-twitter"></i></a>
+        <a href="#" target="_new"><i class="fa fa-envelope-o"></i></a>
+      </p>
+      <p>&copy; Copyright 2015 Yoga Peak Adventures</p>
       <p>Site created by Kat Garsi with <a href="Metamorphe.us">Metamorphe</a></p>
     </footer>
   <!-- scripts -->

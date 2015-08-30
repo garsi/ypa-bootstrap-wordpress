@@ -1,9 +1,10 @@
 /*** FORMS: LESS ***/
 
 button, input[type="submit"] {
+	display: block;
 	width: 175px;
     height: 45px;
-	margin: 25px auto 50px;
+	margin: 45px auto 25px;
 	background-color: @GlacialLake;
     border: none;
     border-bottom: 2px solid @NightSky;
@@ -22,6 +23,16 @@ button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:foc
 	background-color: @River;
 	border-bottom: 2px solid @River;
 	color: @White;
+}
+
+.signup-hp {
+	button, input[type="submit"] {
+		margin-top: 10px;
+	}
+	button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
+		background-color: @Himalaya;
+		border-bottom: 2px solid @Himalaya;
+	}
 }
 
 form {

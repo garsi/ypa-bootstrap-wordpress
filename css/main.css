@@ -48,9 +48,15 @@ h1 {
 h2 {
   font-size: 1.5em;
 }
+h5 {
+  font-size: 1.15em;
+}
 h3,
 h5 {
   margin-top: 0;
+}
+p {
+  font-size: 1em;
 }
 a,
 a:visited {
@@ -89,7 +95,7 @@ nav {
 /* MAIN */
 .more-link {
   margin: 15px 0 25px;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 hr {
   clear: both;
@@ -98,6 +104,30 @@ hr {
 .about-hp h1,
 .about-hp p {
   color: #ffffff;
+}
+footer {
+  color: #ffffff;
+  font-size: 1em;
+}
+footer a,
+footer a:visited,
+footer .fa:visited {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer .fa:hover,
+footer .fa:focus,
+footer .fa:active {
+  color: #92ccd4;
+}
+footer .fa {
+  font-size: 3em;
+}
+footer p:nth-child(3) {
+  font-size: .85em;
 }
 /*** RESPONSIVE BACKGROUND IMAGE WITH MEDIA QUERIES***/
 /* Small screen, non-retina, DEFAULT */
@@ -172,9 +202,10 @@ header {
 /*** FORMS: LESS ***/
 button,
 input[type="submit"] {
+  display: block;
   width: 175px;
   height: 45px;
-  margin: 25px auto 50px;
+  margin: 45px auto 25px;
   background-color: #92ccd4;
   border: none;
   border-bottom: 2px solid #2a3d4d;
@@ -195,6 +226,17 @@ input[type="submit"]:focus {
   background-color: #5e688f;
   border-bottom: 2px solid #5e688f;
   color: #ffffff;
+}
+.signup-hp button,
+.signup-hp input[type="submit"] {
+  margin-top: 10px;
+}
+.signup-hp button:hover,
+.signup-hp input[type="submit"]:hover,
+.signup-hp button:focus,
+.signup-hp input[type="submit"]:focus {
+  background-color: #85a2c7;
+  border-bottom: 2px solid #85a2c7;
 }
 form {
   text-align: center;
@@ -224,6 +266,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 5;
+  text-align: center;
 }
 .navbar-default {
   background-color: #5e688f;
@@ -269,9 +312,11 @@ header img {
   vertical-align: middle;
 }
 /*** MAIN ***/
+section {
+  margin: 50px auto 15px;
+}
 section h1 {
-  margin-top: 40px;
-  padding: 5%;
+  margin: 25px auto;
   text-align: center;
 }
 article {
@@ -288,6 +333,10 @@ article {
   width: 80%;
   max-width: 200px;
 }
+.calendar-hp button,
+.calendar-hp input[type="submit"] {
+  margin-top: 25px;
+}
 .calendar-hp-img,
 .calendar-hp-info {
   float: left;
@@ -298,25 +347,54 @@ article {
 .calendar-hp-info {
   width: 60%;
 }
+/* HOMEPAGE - ABOUT */
+.about-hp {
+  margin-bottom: 0;
+  background: #85a2c7;
+  padding: 25px 0 15px;
+}
+.about-hp img {
+  display: block;
+  margin: 50px auto;
+  width: 50%;
+  max-width: 250px;
+}
 /* HOMEPAGE - SIGNUP */
 .signup-hp {
-  background-color: #d6ccc2;
+  margin-top: 0;
+  background-color: #5e688f;
 }
-.signup-hp h1 {
-  padding-top: 40px;
-}
-/* HOMEPAGE - QUOTE */
-.quote-hp {
-  padding: 0;
-}
-.quote-hp img {
-  width: 100%;
+.signup-hp p {
+  padding: 20px 0;
+  color: #ffffff;
 }
 /* HOMEPAGE - BLOG */
 .blog-hp {
-  padding: 0 10%;
+  padding: 0 5%;
+}
+.blog-hp .col-sm-6 {
+  padding: 0;
 }
 .blog-hp img {
+  width: 100%;
+}
+.post-hp {
+  border: 1px solid #e1e5e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+}
+.post-hp div:nth-child(2) {
+  padding: 0 5%;
+}
+/* HOMEPAGE - INSTAGRAM */
+.instagram-hp {
+  background: #85a2c7;
+  padding: 40px 0 80px;
+}
+.instagram-hp h1 {
+  color: #ffffff;
+}
+.instagram-hp img {
   width: 100%;
 }
 /* HOMEPAGE - SHOP */
@@ -347,62 +425,78 @@ article {
 .shop-hp p {
   clear: both;
 }
-/* HOMEPAGE - INSTAGRAM */
-.instagram-hp {
-  padding: 0;
-}
-.instagram-hp img {
-  width: 100%;
-}
-/* HOMEPAGE - ABOUT */
-.about-hp {
-  background-color: #85a2c7;
-  padding-top: 40px;
-}
-.about-hp img {
-  width: 100%;
-}
 footer {
-  height: 100px;
   clear: both;
+  margin-top: 50px;
+  padding: 25px 0;
   background-color: #5e688f;
-  color: #ffffff;
-}
-footer p {
   text-align: center;
 }
-footer p:first-child {
-  padding-top: 25px;
-  font-size: 1em;
-}
-footer p:nth-child(2) {
-  font-size: .85em;
-}
-footer a {
-  color: #ffffff;
-  text-transform: capitalize;
+footer .fa {
+  margin-bottom: 15px;
+  padding: 0 10px;
 }
 /* IMPORT END | MEDIA QUERIES: LESS */
 /*** SMALL DEVICES: LESS ***/
 /* Small devices (phones and tablets, 768px and up) */
 @media (min-width: 768px) {
+  p,
+  h5 {
+    font-size: 1.2em;
+  }
   nav {
     font-size: 1.25em;
+  }
+  .navbar-nav.nav-justified > li {
+    float: none;
   }
   header img {
     max-width: 400px;
     padding: 10% 0;
   }
-  section h1 {
-    text-align: left;
+  .sm-hide {
+    display: none;
   }
-  .blog-hp h1 {
+  .about-hp-info,
+  .about-hp-img {
+    float: left;
+  }
+  .about-hp-info {
+    width: 60%;
+  }
+  .about-hp-img {
+    width: 40%;
+  }
+  .about-hp-img img {
     margin-top: 0;
-    padding-top: 0;
   }
+  .signup-hp {
+    padding-bottom: 15px;
+  }
+  .signup-hp .mc-field-group {
+    width: 35%;
+    float: left;
+  }
+  .signup-hp input {
+    width: 95%;
+    height: 43px;
+  }
+  .signup-hp button,
+  .signup-hp input[type="submit"] {
+    width: 28%;
+  }
+  .blog-hp h1,
   .shop-hp h1 {
     margin-top: 0;
     padding-top: 0;
+  }
+  .post-hp {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .shop img {
+    max-width: 300px;
   }
 }
 /*** MEDIUM DEVICES: LESS ***/
@@ -411,18 +505,6 @@ footer a {
   header img {
     max-width: 500px;
     padding: 10% 0;
-  }
-  .shop-hp article {
-    display: inline-block;
-    float: left;
-  }
-  .shop-hp div {
-    width: 90%;
-    max-width: 400px;
-  }
-  .shop-hp hr {
-    clear: none;
-    display: none;
   }
 }
 /*** LARGE DEVICES: LESS ***/
