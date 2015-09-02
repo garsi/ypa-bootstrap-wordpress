@@ -1,7 +1,7 @@
 /*** RESPONSIVE BACKGROUND IMAGE WITH MEDIA QUERIES***/
 
 /* Small screen, non-retina, DEFAULT */
-header {
+.hero-hp {
 background-color: @River;
 background: url(../img/main-peaks_sm_1x.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
@@ -18,7 +18,7 @@ background-size: cover;
 	only screen and (        min-device-pixel-ratio: 2) and (min-width: 320px),
 	only screen and (      min-resolution: '192dpi') and (min-width: 320px),
 	only screen and (      min-resolution: '2dppx')  and (min-width: 320px) {
-	header {	
+	.hero-hp {	
 		background-color: @River;
 		background: url(../img/main-peaks_sm_2x.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -30,10 +30,10 @@ background-size: cover;
 
 /* Medium screen, non-retina */
 @media only screen and (min-width: 768px) {
-	html, body, header {
+	html, body, .hero-hp {
 	    	min-height:100%;
 	}
-	header {	
+	.hero-hp {	
 		background-color: @River;
 		background: url(../img/main-peaks_md_1x.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -51,7 +51,7 @@ only screen and (     -o-min-device-pixel-ratio: .5)    and (min-width: 768px),
 only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
 only screen and (                min-resolution: '192dpi') and (min-width: 768px),
 only screen and (                min-resolution: '2dppx')  and (min-width: 768px) { 
-  header {	
+   .hero-hp {	
 		background-color: @River;
 		background: url(../img/main-peaks_md_2x.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -63,7 +63,7 @@ only screen and (                min-resolution: '2dppx')  and (min-width: 768px
 
 /* Large screen, non-retina */
 @media only screen and (min-width: 1200px) {
-	header {	
+	.hero-hp {	
 		background-color: @River;
 		background: url(../img/main-peaks_lg_1x.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -81,7 +81,7 @@ only screen and (     -o-min-device-pixel-ratio: .5)    and (min-width: 1200px),
 only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1200px),
 only screen and (                min-resolution: '192dpi') and (min-width: 1200px),
 only screen and (                min-resolution: '2dppx')  and (min-width: 1200px) { 
-	header {	
+	 .hero-hp {	
 		background-color: @River;
 		background: url(../img/main-peaks_lg_2x.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;

@@ -105,6 +105,20 @@ hr {
 .about-hp p {
   color: #ffffff;
 }
+/* Subpage */
+.line-sp {
+  margin: 25px 0;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#92ccd4), to(#92ccd4), color-stop(50%, #85a2c7));
+}
+.adventures-sp h5 {
+  font-weight: 300;
+  color: #85a2c7;
+  text-align: center;
+  padding: 0 2%;
+  margin: -15px auto 5px;
+}
 footer {
   color: #ffffff;
   font-size: 1em;
@@ -131,7 +145,7 @@ footer p:nth-child(3) {
 }
 /*** RESPONSIVE BACKGROUND IMAGE WITH MEDIA QUERIES***/
 /* Small screen, non-retina, DEFAULT */
-header {
+.hero-hp {
   background-color: #5e688f;
   background: url(../img/main-peaks_sm_1x.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -141,7 +155,7 @@ header {
 }
 /* Small screen, retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: '192dpi') and (min-width: 320px), only screen and (min-resolution: '2dppx') and (min-width: 320px) {
-  header {
+  .hero-hp {
     background-color: #5e688f;
     background: url(../img/main-peaks_sm_2x.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -154,10 +168,10 @@ header {
 @media only screen and (min-width: 768px) {
   html,
   body,
-  header {
+  .hero-hp {
     min-height: 100%;
   }
-  header {
+  .hero-hp {
     background-color: #5e688f;
     background: url(../img/main-peaks_md_1x.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -168,7 +182,7 @@ header {
 }
 /* Medium screen, retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: '192dpi') and (min-width: 768px), only screen and (min-resolution: '2dppx') and (min-width: 768px) {
-  header {
+  .hero-hp {
     background-color: #5e688f;
     background: url(../img/main-peaks_md_2x.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -179,7 +193,7 @@ header {
 }
 /* Large screen, non-retina */
 @media only screen and (min-width: 1200px) {
-  header {
+  .hero-hp {
     background-color: #5e688f;
     background: url(../img/main-peaks_lg_1x.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -190,7 +204,7 @@ header {
 }
 /* Large screen, retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-o-min-device-pixel-ratio: 0.5) and (min-width: 1200px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min-resolution: '192dpi') and (min-width: 1200px), only screen and (min-resolution: '2dppx') and (min-width: 1200px) {
-  header {
+  .hero-hp {
     background-color: #5e688f;
     background: url(../img/main-peaks_lg_2x.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -300,10 +314,10 @@ nav {
   border: none;
 }
 /*** HEADER IMAGE ***/
-header {
+.hero-hp {
   width: 100%;
 }
-header img {
+.hero-hp img {
   width: 75%;
   max-width: 300px;
   display: block;
@@ -396,6 +410,9 @@ article {
 }
 .instagram-hp img {
   width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: auto;
 }
 /* HOMEPAGE - SHOP */
 .shop-hp div {
@@ -436,6 +453,31 @@ footer .fa {
   margin-bottom: 15px;
   padding: 0 10px;
 }
+/*** SUBPAGES ***/
+.hero-sp {
+  width: 100%;
+}
+/*** SP: WHO WE ARE ***/
+.about-sp-img img {
+  display: block;
+  margin: 50px auto;
+  width: 50%;
+  max-width: 250px;
+}
+#about-page form {
+  margin-top: 50px;
+}
+#about-page button,
+#about-page input[type="submit"] {
+  margin-top: 15px;
+}
+/*** SP: ADVENUTRES ***/
+#adventures-page article {
+  margin-top: 50px;
+}
+#adventures-page div {
+  margin-bottom: 30px;
+}
 /* IMPORT END | MEDIA QUERIES: LESS */
 /*** SMALL DEVICES: LESS ***/
 /* Small devices (phones and tablets, 768px and up) */
@@ -450,7 +492,7 @@ footer .fa {
   .navbar-nav.nav-justified > li {
     float: none;
   }
-  header img {
+  .hero-hp img {
     max-width: 400px;
     padding: 10% 0;
   }
@@ -498,11 +540,44 @@ footer .fa {
   .shop img {
     max-width: 300px;
   }
+  /*** SUBPAGES ***/
+  /*** SP: WHO WE ARE ***/
+  .about-sp-img img {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .about-sp-info {
+    margin: 25px auto;
+  }
+  /*** SP: ADVENTURES ***/
+  #adventures-page article {
+    margin-top: 60px;
+  }
+  #adventures-page div {
+    margin-bottom: 40px;
+  }
+  .adventures-sp h5 {
+    width: 85%;
+  }
+  .calendar-hp-img {
+    width: 30%;
+  }
+  .calendar-hp-info {
+    width: 50%;
+  }
+  .button-div {
+    float: left;
+    width: 10%;
+  }
+  .calendar-hp button,
+  .calendar-hp input[type="submit"] {
+    margin-top: 0px;
+  }
 }
 /*** MEDIUM DEVICES: LESS ***/
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  header img {
+  .hero-hp img {
     max-width: 500px;
     padding: 10% 0;
   }
@@ -510,8 +585,18 @@ footer .fa {
 /*** LARGE DEVICES: LESS ***/
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  header img {
+  .hero-hp img {
     max-width: 500px;
     padding: 10% 0;
+  }
+  /*** SP: ADVENTURES ***/
+  #adventures-page article {
+    margin-top: 75px;
+  }
+  #adventures-page div {
+    margin-bottom: 50px;
+  }
+  .adventures-sp h5 {
+    width: 60%;
   }
 }

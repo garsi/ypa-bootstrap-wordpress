@@ -57,7 +57,7 @@ nav {
 }
 
 /*** HEADER IMAGE ***/
-header {
+.hero-hp {
 	width: 100%;
 	img {
 	    width: 75%;
@@ -163,7 +163,10 @@ article {
 		color: @White;
 	}
 	img {
-		width: 100%
+		width: 100%;
+		max-width: 1200px;
+		display: block;
+		margin: auto;
 	}
 }
 
@@ -208,6 +211,45 @@ footer {
 		padding: 0 10px;
 	}
 }
+
+/*** SUBPAGES ***/
+
+.hero-sp {
+	width: 100%;
+}
+
+.title-sp {
+
+}
+
+/*** SP: WHO WE ARE ***/
+
+.about-sp-img {
+	img {
+		display: block;
+		margin: 50px auto;
+		width: 50%;
+		max-width: 250px;
+	}
+}
+
+#about-page form {
+		margin-top: 50px;
+	}
+
+#about-page button, #about-page input[type="submit"] {
+		margin-top: 15px;
+	}
+
+/*** SP: ADVENUTRES ***/
+#adventures-page article {
+	margin-top: 50px;
+}
+
+#adventures-page div  {
+	margin-bottom: 30px;
+}
+
 
 
 /* IMPORT END | MEDIA QUERIES: LESS */
