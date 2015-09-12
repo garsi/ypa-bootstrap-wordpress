@@ -43,13 +43,19 @@ h5 {
   font-weight: 600;
 }
 h1 {
-  font-size: 1.75em;
+  font-size: 1.6em;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.3em;
+}
+h4 {
+  font-size: 1.15em;
 }
 h5 {
-  font-size: 1.15em;
+  font-size: 1em;
 }
 h3,
 h5 {
@@ -82,36 +88,36 @@ nav {
   font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
-.navbar-default .navbar-nav > li > a,
+nav a,
+nav a:visited,
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default,
+.navbar-default .navbar-nav > .active > a:visited {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
+nav a:hover,
+nav a:focus,
+.navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
   color: #85a2c7;
 }
 /* MAIN */
-.more-link {
-  margin: 15px 0 25px;
-  font-size: 1.25em;
-}
 hr {
   clear: both;
-  margin-bottom: 35px;
+  margin: 10px 0px 40px;
+  height: 1px;
+  background: #85a2c7;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#92ccd4), to(#92ccd4), color-stop(50%, #85a2c7));
+}
+.more-link {
+  margin: 15px 0 25px;
+  font-size: 1.3em;
 }
 .about-hp h1,
 .about-hp p {
   color: #ffffff;
 }
 /* Subpage */
-.line {
-  margin: 25px 0;
-  height: 1px;
-  background: black;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(#92ccd4), to(#92ccd4), color-stop(50%, #85a2c7));
-}
 .page-intro,
 .latest h5 {
   font-weight: 300;
@@ -125,7 +131,7 @@ hr {
   margin-top: 5px;
   text-transform: uppercase;
 }
-.date {
+.post-details {
   font-weight: 300;
   color: #85a2c7;
   font-style: italic;
@@ -248,7 +254,7 @@ input[type="submit"] {
   margin: 45px auto 25px;
   background-color: #92ccd4;
   border: none;
-  border-bottom: 2px solid #2a3d4d;
+  border-bottom: 3px solid #5e688f;
   border-radius: 5px;
   color: #2a3d4d;
   font-size: 1.2em;
@@ -263,20 +269,9 @@ button:hover,
 input[type="submit"]:hover,
 button:focus,
 input[type="submit"]:focus {
-  background-color: #5e688f;
-  border-bottom: 2px solid #5e688f;
-  color: #ffffff;
-}
-.signup-hp button,
-.signup-hp input[type="submit"] {
-  margin-top: 10px;
-}
-.signup-hp button:hover,
-.signup-hp input[type="submit"]:hover,
-.signup-hp button:focus,
-.signup-hp input[type="submit"]:focus {
-  background-color: #85a2c7;
-  border-bottom: 2px solid #85a2c7;
+  background-color: #ffffff;
+  border: 3px solid #5e688f;
+  color: #5e688f;
 }
 form {
   text-align: center;
@@ -297,6 +292,19 @@ input[type="email"],
 input[type="text"] {
   background-color: #e1e5e6;
 }
+.signup button,
+.signup input[type="submit"] {
+  margin-top: 10px;
+  border-bottom: 3px solid #e1e5e6;
+}
+.signup button:hover,
+.signup input[type="submit"]:hover,
+.signup button:focus,
+.signup input[type="submit"]:focus {
+  background-color: #ffffff;
+  border: 3px solid #92ccd4;
+  color: #92ccd4;
+}
 .sidebar-sp button,
 .sidebar-sp input[type="submit"] {
   margin-top: 10px;
@@ -305,13 +313,23 @@ html,
 body {
   height: 100%;
 }
-/*** NAV ***/
-nav {
-  position: fixed;
+img {
   width: 100%;
-  z-index: 5;
+  display: block;
+  margin: auto;
+}
+section {
+  margin: 25px auto 15px;
+}
+section h1 {
+  margin: 25px auto;
   text-align: center;
 }
+article {
+  margin-top: 10px;
+  padding: 0 5%;
+}
+/*** NAV ***/
 .navbar-default {
   background-color: #5e688f;
   border-color: #5e688f;
@@ -320,11 +338,18 @@ nav {
   width: 30px;
   height: 30px;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-  background-color: #85a2c7;
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent;
+  border-bottom: 2px solid #85a2c7;
+  border-radius: 0px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background: #85a2c7;
   border-bottom: 2px solid #ffffff;
+  border-radius: 0px;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -350,129 +375,101 @@ nav {
 .hero-hp img {
   width: 75%;
   max-width: 300px;
-  display: block;
-  margin: auto;
   padding: 6em 0 4em;
   vertical-align: middle;
 }
 /*** MAIN ***/
-section {
-  margin: 50px auto 15px;
-}
-section h1 {
-  margin: 25px auto;
-  text-align: center;
-}
-article {
-  margin-top: 10px;
-  padding: 0 5%;
-}
-/* HOMEPAGE - CALENDAR */
-.calendar-hp h2 {
-  margin-top: 0;
-}
-.calendar-hp img {
-  display: block;
-  margin: auto;
-  width: 80%;
-  max-width: 200px;
-}
-.calendar-hp button,
-.calendar-hp input[type="submit"] {
-  margin-top: 25px;
-}
-.calendar-hp-img,
-.calendar-hp-info {
-  float: left;
-}
-.calendar-hp-img {
-  width: 40%;
-}
-.calendar-hp-info {
-  width: 60%;
-}
-/* HOMEPAGE - ABOUT */
-.about-hp {
-  margin-bottom: 0;
-  background: #85a2c7;
-  padding: 25px 0 15px;
-}
-.about-hp img {
+.circle {
   display: block;
   margin: 50px auto;
   width: 50%;
   max-width: 250px;
 }
-/* HOMEPAGE - SIGNUP */
-.signup-hp {
+.calendar h2 {
+  margin-top: 0;
+}
+.calendar button,
+.calendar input[type="submit"] {
+  margin-top: 25px;
+}
+.highlight {
+  margin-bottom: 0;
+  padding: 25px 0 15px;
+  background: #85a2c7;
+  color: #ffffff;
+}
+.highlight h1 {
+  color: #ffffff;
+}
+.signup {
   margin-top: 0;
   background-color: #5e688f;
 }
-.signup-hp p {
+.signup p {
   padding: 20px 0;
   color: #ffffff;
 }
 /* HOMEPAGE - BLOG */
-.blog-hp {
+.articles {
   padding: 0 5%;
 }
-.blog-hp .col-sm-6 {
+.articles .col-sm-6 {
   padding: 0;
 }
-.blog-hp img {
+.articles img {
   width: 100%;
 }
-.post-hp {
+.post-preview {
   border: 1px solid #e1e5e6;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 35px;
 }
-.post-hp div:nth-child(2) {
+.post-preview div:nth-child(2) {
   padding: 0 5%;
 }
 /* HOMEPAGE - INSTAGRAM */
-.instagram-hp {
+.instagram-full-width {
   background: #85a2c7;
   padding: 40px 0 80px;
 }
-.instagram-hp h1 {
+.instagram-full-width h1 {
   color: #ffffff;
 }
-.instagram-hp img {
+.instagram-full-width img {
   width: 100%;
   max-width: 1200px;
   display: block;
   margin: auto;
 }
 /* HOMEPAGE - SHOP */
-.shop-hp {
+.shop {
   margin-bottom: 100px;
 }
-.shop-hp div {
+.shop div {
   width: 80%;
   margin: auto;
   max-width: 300px;
 }
-.shop-hp img {
+.shop img {
   width: 100%;
   display: block;
   margin: 10px auto;
 }
-.shop-hp h2,
-.shop-hp h5 {
+.shop h2,
+.shop h5 {
   display: inline-block;
   margin: 0;
 }
-.shop-hp h2 {
+.shop h2 {
   float: left;
   width: 85%;
 }
-.shop-hp h5 {
+.shop h5 {
   float: right;
   width: 10%;
   padding-top: 5px;
 }
-.shop-hp p {
+.shop p {
   clear: both;
 }
 footer {
@@ -489,36 +486,32 @@ footer .fa {
 .hero-sp {
   width: 100%;
 }
+/*** SP: ADVENUTRES ***/
+#adventures-page article {
+  margin-top: 50px;
+}
 /*** SP: WHO WE ARE ***/
-.about-sp-img img {
-  display: block;
-  margin: 50px auto;
-  width: 50%;
-  max-width: 250px;
+#about-page .circle {
+  margin: 0 auto 30px;
+}
+#about-page .about-details {
+  margin-bottom: 25px;
+}
+#about-page h2 {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 25px;
 }
 #about-page form {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 #about-page button,
 #about-page input[type="submit"] {
   margin-top: 15px;
   margin-bottom: 100px;
 }
-/*** SP: ADVENUTRES ***/
-#adventures-page article {
-  margin-top: 50px;
-}
-#adventures-page div {
-  margin-bottom: 30px;
-}
 /*** SP: MOUNTAIN TALK ***/
-.blog-sp {
-  padding: 0 5%;
-}
-.blog-sp img {
-  width: 100%;
-}
-.post-sp {
+.post-preview {
   padding-left: 0;
   padding-right: 0;
 }
@@ -547,7 +540,7 @@ footer .fa {
 }
 .search-example {
   height: 50px;
-  width: 300px;
+  width: 100%;
   margin: 10px auto;
   background: white;
   border: 1px solid #5e688f;
@@ -558,10 +551,11 @@ footer .fa {
   color: #5e688f;
 }
 .signup-sidebar {
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   margin: 50px auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background: #85a2c7;
 }
 .signup-sidebar p {
@@ -583,15 +577,36 @@ footer .fa {
 /*** SMALL DEVICES: LESS ***/
 /* Small devices (phones and tablets, 768px and up) */
 @media (min-width: 768px) {
+  h1 {
+    font-size: 1.75em;
+  }
   p,
   h5 {
     font-size: 1.2em;
   }
+  section {
+    margin: 35px auto 25px;
+  }
+  article,
+  article.col-sm-6 {
+    margin-top: 20px;
+    padding: 0 5%;
+  }
+  .page-intro {
+    font-size: 1.3em;
+    text-align: center;
+  }
   nav {
     font-size: 1.25em;
   }
-  .navbar-nav.nav-justified > li {
-    float: none;
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar ul {
+    width: 98%;
+    margin: auto;
+    padding-left: 60px;
   }
   .hero-hp img {
     max-width: 400px;
@@ -600,40 +615,40 @@ footer .fa {
   .sm-hide {
     display: none;
   }
-  .about-hp-info,
-  .about-hp-img {
+  .about-details,
+  .about-img {
     float: left;
   }
-  .about-hp-info {
+  .about-details {
     width: 60%;
   }
-  .about-hp-img {
+  .about-img {
     width: 40%;
   }
-  .about-hp-img img {
+  .about-img img {
     margin-top: 0;
   }
-  .signup-hp {
-    padding-bottom: 15px;
+  .signup {
+    padding-bottom: 25px;
   }
-  .signup-hp .mc-field-group {
+  .signup .mc-field-group {
     width: 35%;
     float: left;
   }
-  .signup-hp input {
+  .signup input {
     width: 95%;
     height: 43px;
   }
-  .signup-hp button,
-  .signup-hp input[type="submit"] {
+  .signup button,
+  .signup input[type="submit"] {
     width: 28%;
   }
-  .blog-hp h1,
-  .shop-hp h1 {
+  .articles h1,
+  .shop h1 {
     margin-top: 0;
     padding-top: 0;
   }
-  .post-hp {
+  .post-preview {
     width: 45%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -642,42 +657,30 @@ footer .fa {
     max-width: 300px;
   }
   /*** SUBPAGES ***/
-  /*** SP: WHO WE ARE ***/
-  .about-sp-img img {
-    margin-top: 25px;
-    width: 100%;
-  }
-  .about-sp-info {
-    margin: 25px auto;
+  .page-intro {
+    width: 85%;
   }
   /*** SP: ADVENTURES ***/
   #adventures-page article {
-    margin-top: 60px;
+    margin-top: 50px;
   }
   #adventures-page div {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
-  .adventures-sp h5 {
-    width: 85%;
-  }
-  .calendar-hp-img {
-    width: 30%;
-  }
-  .calendar-hp-info {
-    width: 50%;
-  }
-  .button-div {
-    float: left;
-    width: 10%;
-  }
-  .calendar-hp button,
-  .calendar-hp input[type="submit"] {
+  .calendar button,
+  .calendar input[type="submit"] {
     margin-top: 0px;
+    float: left;
+    margin-left: 15px;
+  }
+  /*** SP: WHO WE ARE ***/
+  #about-page .circle {
+    width: 100%;
+    max-width: 300px;
   }
   /*** SP: BLOG ***/
-  .post-sp {
-    width: 85%;
-    margin: 50px auto 0;
+  #blog-page .post-preview {
+    width: 100%;
   }
   #blog-page button,
   #blog-page input[type="submit"] {
@@ -688,16 +691,54 @@ footer .fa {
     width: 400px;
     margin: auto;
   }
+  #blog-page .sidebar-sp button,
+  #blog-page .sidebar-sp input[type="submit"] {
+    margin-top: 10px;
+  }
 }
 /*** MEDIUM DEVICES: LESS ***/
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  h1 {
+    font-size: 2.15em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p,
+  h5 {
+    font-size: 1.3em;
+  }
+  .more-link {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  section {
+    margin: 50px auto 35px;
+  }
+  article,
+  article.col-sm-6 {
+    margin-top: 20px;
+    padding: 0 5%;
+  }
+  .md-hide {
+    display: none;
+  }
+  .navbar ul {
+    width: 80%;
+  }
   .hero-hp img {
     max-width: 500px;
     padding: 10% 0;
   }
-  .blog-sp {
-    margin-top: 0;
+  .calendar img {
+    max-width: 300px;
+  }
+  .highlight h1 {
+    padding-top: 15px;
   }
   .sidebar-sp {
     margin-top: 0;
@@ -711,14 +752,18 @@ footer .fa {
     max-width: 500px;
     padding: 10% 0;
   }
-  /*** SP: ADVENTURES ***/
-  #adventures-page article {
-    margin-top: 75px;
+  section {
+    margin: 50px auto 35px;
   }
-  #adventures-page div {
-    margin-bottom: 50px;
+  article,
+  article.col-sm-6 {
+    margin-top: 40px;
+    padding: 0 8%;
   }
-  .adventures-sp h5 {
+  .page-intro {
     width: 60%;
+  }
+  .calendar img {
+    max-width: 400px;
   }
 }

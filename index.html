@@ -28,40 +28,39 @@
   <script src="js/modernizr.js"></script>
 </head>
 <body>
-  <!-- Fixed navbar -->
+<!-- navbar fixed -->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/logo-icon.png" alt="Yoga Peak Adventures Home"/></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="upcoming-adventures.html">Advenutres</a></li>
-          <li><a href="who-we-are.html">Who We Are</a></li>
-          <li><a href="mountain-talk.html">Mountain Talk</a></li>
-          <li><a href="the-shop">The Shop</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="img/logo-icon.png" alt="Yoga Peak Adventures Home"/></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="upcoming-adventures.html">Advenutres</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="mountain-talk.html">Mountain Talk</a></li>
+        <li><a href="the-shop">The Shop</a></li>
+      </ul>
     </div>
   </nav>
   <header class="hero-hp">
     <img src="img/Logo-finals_full-color.png" alt="Yoga Peak Adventures">
   </header>
   <main class="container-fluid">
-    <div class="row">
-      <section class="calendar-hp"><!-- start of new row -->
-        <h1>Upcoming Adventures</h1>
-        <article class="col-sm-6">
-          <div class="calendar-hp-img">
+    <section class="calendar">
+    <div class="row"> <!-- start of new row -->
+      <h1>Upcoming Adventures</h1>
+      <article class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-4 calendar-img">
             <img src="http://placehold.it/200x200" alt="Adventure Details"/>
           </div>
-          <div class="calendar-hp-info">
+          <div class="col-xs-8 calendar-details">
             <h3>Sep 21</h3>
             <h2>Hike Name</h2>
             <h5>Location</h5>
@@ -69,13 +68,15 @@
             <p>Details…fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow strawberry cake. Fruitcake powder cookie bear claw. Brownie gingerbread.</p>
             <p class="more-link"><a href="#">Sign up &gt;</a></p>
           </div>
-          <hr class="sm-hide line"/>
-        </article>
-        <article class="col-sm-6">
-          <div class="calendar-hp-img">
-            <img src="http://placehold.it/300x300" alt="Adventure Details"/>
+        </div> <!-- end of row -->
+        <hr class="sm-hide"/>
+      </article>
+      <article class="col-sm-6">
+        <div class="row"> <!-- start of new row -->
+          <div class="col-xs-4 calendar-img">
+            <img src="http://placehold.it/200x200" alt="Adventure Details"/>
           </div>
-          <div class="calendar-hp-info">
+          <div class="col-xs-8 calendar-details">
             <h3>Sep 21</h3>
             <h2>Hike Name</h2>
             <h5>Location</h5>
@@ -83,59 +84,61 @@
             <p>Details…fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow strawberry cake. Fruitcake powder cookie bear claw. Brownie gingerbread.</p>
             <p class="more-link"><a href="#">Sign up &gt;</a></p>
           </div>
-        </article>
-        <div class="col-xs-12">
-          <button type="button">More Events &gt;</button>
-        </div>
-      </section>
+        </div> <!-- end of row -->
+      </article>
+      <div class="col-xs-12">
+        <button type="button">More Events &gt;</button>
+      </div>
     </div> <!-- end row -->
+    </section>
+
     <div class="row"> <!-- start of new row -->
-      <section class="col-xs-12 about-hp">
-        <article>
-          <h1>Adventure is Calling</h1>
-          <div class="about-hp-info">  
-            <p>Explore your edge and experience the great outdoors like never before. Hike to new peaks, flow together in nature and start living in the present moment.</p>
-            <p>I'm Erin, and this is a little about me...</p>
-          </div>
-          <div class="about-hp-img">
-            <img src="img/erin-heyamoto-headshot.png" alt="Erin">
-          </div>
-        </article>
-      </section>
-      <section class="col-xs-12 signup-hp">
-        <article>
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form action="http://yogapeakadventures.us11.list-manage.com/subscribe/post?u=cab7e506c5033c62b38caaeb2&amp;id=bac29332ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                  <p><strong>Sign up to receive special invitations and news.</strong></p>
-                <div class="mc-field-group">
-                  <label for="mce-FNAME"></label>
-                  <input type="text" value="" placeholder="first name" name="FNAME" class="" id="mce-FNAME">
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL"></label>
-                  <input type="email" value="" placeholder="email" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none">
-                  </div>
-                  <div class="response" id="mce-success-response" style="display:none">
-                  </div>
-                </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_cab7e506c5033c62b38caaeb2_bac29332ad" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
-                </div>
+    <section class="col-xs-12 highlight">
+      <article>
+        <h1>Adventure is Calling</h1>
+        <div class="about-details">  
+          <p>Explore your edge and experience the great outdoors like never before. Hike to new peaks, flow together in nature and start living in the present moment.</p>
+          <p>I'm Erin, and this is a little about me...</p>
+        </div>
+        <div class="about-img">
+          <img class="circle" src="img/erin-heyamoto-headshot.png" alt="Erin">
+        </div>
+      </article>
+    </section>
+    <section class="col-xs-12 signup">
+      <article>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="http://yogapeakadventures.us11.list-manage.com/subscribe/post?u=cab7e506c5033c62b38caaeb2&amp;id=bac29332ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <p><strong>Sign up to receive special invitations and news.</strong></p>
+              <div class="mc-field-group">
+                <label for="mce-FNAME"></label>
+                <input type="text" value="" placeholder="first name" name="FNAME" class="" id="mce-FNAME">
               </div>
-            </form> 
-          </div> <!--End mc_embed_signup-->
-        </article>
-      </section>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL"></label>
+                <input type="email" value="" placeholder="email" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none">
+                </div>
+                <div class="response" id="mce-success-response" style="display:none">
+                </div>
+              </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_cab7e506c5033c62b38caaeb2_bac29332ad" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+            </div>
+          </form> 
+        </div> <!--End mc_embed_signup-->
+      </article>
+    </section>
     </div> <!-- end of row-->
     <div class="row"> <!-- start of new row -->
-      <section class="blog-hp">
+      <section class="articles">
         <h1>Mountain Talk</h1>
-        <article class="col-sm-6 post-hp">
+        <article class="col-sm-6 post-preview">
           <div>
             <img src="img/blog-post_test-name.png" alt="New Post"/>
           </div>
@@ -147,8 +150,8 @@
             <p class="more-link"><a href="#">Keep Reading &gt;</a></p>
           </div>
         </article>
-        <hr class="sm-hide line"/>
-        <article class="col-sm-6 post-hp">
+        <hr class="sm-hide"/>
+        <article class="col-sm-6 post-preview">
           <div>
             <img src="img/blog-post_test-name.png" alt="New Post"/>
           </div>
@@ -166,41 +169,41 @@
       </section>
     </div> <!-- end row -->
     <div class="row"> <!-- start of new row -->
-      <section class="instagram-hp">
+      <section class="instagram-full-width">
         <h1>Instagram @yogapeakadventures</h1>
         <img src="img/instagram.png" alt="instagram"/>
       </section>
     </div> <!-- end row -->
     <div class="row"> <!-- start of new row -->
-      <section class="shop-hp">
+      <section class="shop">
         <h1>The Shop</h1>
         <article class="col-sm-4">
-          <div class="shop-hp-img">
+          <div class="item-img">
             <img src="http://placehold.it/200x200" alt="shop item"/>
           </div>
-          <div class="shop-hp-info">
+          <div class="item-details">
             <h2>YPA Waterbottle</h2>
             <h5>$25</h5>
             <p class="more-link"><a href="#">Buy &gt;</a></p>
           </div>
-          <hr class="sm-hide line"/>
+          <hr class="sm-hide"/>
         </article>
         <article class="col-sm-4">
-          <div class="shop-hp-img">
+          <div class="item-img">
             <img src="http://placehold.it/200x200" alt="shop item"/>
           </div>
-          <div class="shop-hp-info">
+          <div class="item-details">
             <h2>YPA Waterbottle</h2>
             <h5>$25</h5>
             <p class="more-link"><a href="#">Buy &gt;</a></p>
           </div>
-          <hr class="sm-hide line"/>
+          <hr class="sm-hide"/>
         </article>
         <article class="col-sm-4">
-          <div class="shop-hp-img">
+          <div class="item-img">
             <img src="http://placehold.it/200x200" alt="shop item"/>
           </div>
-          <div class="shop-hp-info">
+          <div class="item-details">
             <h2>YPA Waterbottle</h2>
             <h5>$25</h5>
             <p class="more-link"><a href="#">Buy &gt;</a></p>

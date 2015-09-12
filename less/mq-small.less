@@ -2,17 +2,42 @@
 
 /* Small devices (phones and tablets, 768px and up) */
 @media (min-width: 768px) { 
+	h1 {
+		font-size: 1.75em;
+	}
+
 	p, h5 {
 		font-size: 1.2em;
+	}
+
+	section {
+		margin: 35px auto 25px;
+	}
+
+	article, article.col-sm-6 {
+		margin-top: 20px;
+		padding: 0 5%;
+	}
+
+	.page-intro {
+		font-size: 1.3em;
+		text-align: center;
 	}
 
 	nav {
 		font-size: 1.25em;
 	}
 
-	.navbar-nav.nav-justified > li{
-    float:none;
-}
+	.navbar {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.navbar ul {
+		width: 98%;
+		margin: auto;
+		padding-left: 60px;
+	}
 
 	.hero-hp {
 		img {
@@ -25,26 +50,23 @@
 		display: none;
 	}
 
-	.about-hp-info, .about-hp-img {	
+	.about-details, .about-img {	
 		float: left;
 	}
 
-	.about-hp-info {
+	.about-details {
 		width: 60%;
 	}
 
-	.about-hp-img {
+	.about-img {
 		width: 40%;
 		img {
 			margin-top: 0;
 		}
 	}
-	
-	.signup-hp {
-		padding-bottom: 15px;
-	}
 
-	.signup-hp {
+	.signup {
+		padding-bottom: 25px;
 		.mc-field-group {
 			width: 35%;
 			float: left;
@@ -58,14 +80,14 @@
 		}
 	}
 
-	.blog-hp, .shop-hp {
+	.articles, .shop {
 		h1 {
 			margin-top: 0;
 			padding-top: 0;
 		}
 	}
 
-	.post-hp {
+	.post-preview {
 		width: 45%;
 		margin-left: 2.5%;
 		margin-right: 2.5%;
@@ -78,56 +100,38 @@
 	}
 
 	/*** SUBPAGES ***/
-
-	/*** SP: WHO WE ARE ***/
-	.about-sp-img {
-		img {
-			margin-top: 25px;
-			width: 100%;
+	.page-intro {
+		width: 85%;
+	}
+	
+	/*** SP: ADVENTURES ***/
+	#adventures-page {
+		article {
+			margin-top: 50px;
+		}
+		div {
+			margin-bottom: 25px;
 		}
 	}
 
-	.about-sp-info {
-		margin: 25px auto;
-	}
-
-	/*** SP: ADVENTURES ***/
-	#adventures-page article {
-	margin-top: 60px;
-	}
-
-	#adventures-page div  {
-		margin-bottom: 40px;
-	}
-
-	.adventures-sp h5 {
-		width: 85%;
-	}
-
-	.calendar-hp-img {
-		width: 30%;
-	}
-
-	.calendar-hp-info {
-		width: 50%;
-	}
-
-	.button-div {
-		float: left;
-		width: 10%;
-	}
-
-	.calendar-hp button, .calendar-hp input[type="submit"] {
+	.calendar button, .calendar input[type="submit"] {
     	margin-top: 0px;
+    	float: left;
+    	margin-left: 15px;
 	}
 
+	/*** SP: WHO WE ARE ***/
+	#about-page {
+		.circle {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
 	/*** SP: BLOG ***/
-    .post-sp {
-	    width: 85%;
-	    margin: 50px auto 0;
-	}
-
 	#blog-page {
+		.post-preview {
+			width: 100%;
+		}
 		button, input[type="submit"] {
 	    	display: inline;
 	    	margin: 50px 10px 0;
@@ -135,6 +139,11 @@
 	    .button-nav {
 	    	width: 400px;
 	    	margin: auto;
+	    }
+	    .sidebar-sp {
+	    	button, input[type="submit"] {
+	    		margin-top: 10px;
+	    	}
 	    }
 	}
     

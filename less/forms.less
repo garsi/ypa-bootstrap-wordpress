@@ -7,7 +7,7 @@ button, input[type="submit"] {
 	margin: 45px auto 25px;
 	background-color: @GlacialLake;
     border: none;
-    border-bottom: 2px solid @NightSky;
+    border-bottom: 3px solid @River;
     border-radius: 5px;
     color: @NightSky;
     font-size: 1.2em;
@@ -20,19 +20,9 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
-	background-color: @River;
-	border-bottom: 2px solid @River;
-	color: @White;
-}
-
-.signup-hp {
-	button, input[type="submit"] {
-		margin-top: 10px;
-	}
-	button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
-		background-color: @Himalaya;
-		border-bottom: 2px solid @Himalaya;
-	}
+	background-color: @White;
+	border: 3px solid @River;
+	color: @River;
 }
 
 form {
@@ -54,6 +44,18 @@ input {
 
 input[type="email"], input[type="text"] {	
 	background-color: @Peace;
+}
+
+.signup {
+	button, input[type="submit"] {
+		margin-top: 10px;
+		border-bottom: 3px solid @Peace;
+	}
+	button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
+		background-color: @White;
+		border: 3px solid @GlacialLake;
+		color: @GlacialLake;
+	}
 }
 
 .sidebar-sp {

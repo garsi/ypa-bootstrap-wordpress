@@ -18,15 +18,23 @@ h5 {
 }
 
 h1 {
-	font-size: 1.75em;
+	font-size: 1.6em;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.15em;
 }
 
 h5 {
-	font-size: 1.15em;
+	font-size: 1em;
 }
 
 h3, h5 {
@@ -64,24 +72,27 @@ nav {
 	text-transform: uppercase;
 }
 	
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+nav a, nav a:visited, .navbar-default .navbar-nav>.active>a, .navbar-default, .navbar-default .navbar-nav>.active>a:visited {
 	color: @White;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+nav a:hover, nav a:focus, .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	color: @Himalaya;
 }
 
 /* MAIN */
 
-.more-link {
-	margin: 15px 0 25px;
-	font-size: 1.25em;
-}
-
 hr {
 	clear: both;
-	margin-bottom: 35px;
+	margin: 10px 0px 40px;
+    height: 1px;
+    background: @Himalaya;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@GlacialLake), to(@GlacialLake), color-stop(50%, @Himalaya));
+}
+
+.more-link {
+	margin: 15px 0 25px;
+	font-size: 1.3em;
 }
 
 .about-hp {
@@ -91,13 +102,6 @@ hr {
 }
 
 /* Subpage */
-
-.line {
-    margin: 25px 0;
-    height: 1px;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(@GlacialLake), to(@GlacialLake), color-stop(50%, @Himalaya));
-}
 
 .page-intro, .latest h5 {
 	font-weight: 300;
@@ -113,7 +117,7 @@ hr {
 	text-transform: uppercase;
 }
 
-.date {
+.post-details {
 	font-weight: 300;
 	color: @Himalaya;
 	font-style: italic;

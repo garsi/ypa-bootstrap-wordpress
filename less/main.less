@@ -13,15 +13,26 @@ html, body {
     height:100%;
 }
 
-/*** NAV ***/
-nav {
-	position:fixed;
+img {
 	width: 100%;
-	z-index: 5;
-	text-align: center;
-
+	display: block;
+	margin: auto;
 }
 
+section {
+	margin: 25px auto 15px;
+	h1 {
+		margin: 25px auto;
+		text-align: center;
+	}
+}
+
+article {
+	margin-top: 10px;
+	padding: 0 5%;
+}
+
+/*** NAV ***/
 .navbar-default {
     background-color: @River;
     border-color: @River;
@@ -32,9 +43,16 @@ nav {
 	height: 30px
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background-color: @Himalaya;
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+	border-bottom: 2px solid @Himalaya;
+	border-radius: 0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background: @Himalaya;
 	border-bottom: 2px solid @White;
+	border-radius: 0px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -62,71 +80,40 @@ nav {
 	img {
 	    width: 75%;
 	    max-width: 300px;
-	    display: block;
-	    margin: auto;
 	    padding: 6em 0 4em;
 	    vertical-align: middle;
 	}
 }
 
 /*** MAIN ***/
-section {
-	margin: 50px auto 15px;
-	h1 {
-		margin: 25px auto;
-		//padding: 0 5%;
-		text-align: center;
-	}
+
+.circle {
+	display: block;
+	margin: 50px auto;
+	width: 50%;
+	max-width: 250px;
 }
 
-article {
-	margin-top: 10px;
-	padding: 0 5%;
-}
-
-/* HOMEPAGE - CALENDAR */
-.calendar-hp {
+.calendar {
 	h2 {
 		margin-top: 0;
-	}
-	img {
-		display: block;
-		margin: auto;
-		width: 80%;
-		max-width: 200px;
 	}
 	button, input[type="submit"] {
 		margin-top: 25px;
 	}
 }
 
-.calendar-hp-img, .calendar-hp-info {
-	float: left;
-}
-
-.calendar-hp-img {
-	width: 40%;
-}
-
-.calendar-hp-info {
-	width: 60%;
-}
-
-/* HOMEPAGE - ABOUT */
-.about-hp {
+.highlight {
 	margin-bottom: 0;
-	background: @Himalaya;
 	padding: 25px 0 15px;
-	img {
-		display: block;
-		margin: 50px auto;
-		width: 50%;
-		max-width: 250px;
+	background: @Himalaya;
+	color: @White;
+	h1 {
+		color: @White;
 	}
 }
 
-/* HOMEPAGE - SIGNUP */
-.signup-hp {
+.signup {
 	margin-top: 0;
 	background-color: @River;
 	p {
@@ -136,7 +123,7 @@ article {
 }
 
 /* HOMEPAGE - BLOG */
-.blog-hp {
+.articles {
 	padding: 0 5%;
 	.col-sm-6 {
 		padding: 0;
@@ -146,7 +133,7 @@ article {
 	}
 }
 
-.post-hp {
+.post-preview {
 	border: 1px solid @Peace;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .10);
 	margin-bottom: 35px;
@@ -156,7 +143,7 @@ article {
 }
 
 /* HOMEPAGE - INSTAGRAM */
-.instagram-hp {
+.instagram-full-width {
 	background: @Himalaya;
 	padding: 40px 0 80px;
 	h1 {
@@ -171,7 +158,7 @@ article {
 }
 
 /* HOMEPAGE - SHOP */
-.shop-hp {
+.shop {
 	margin-bottom: 100px;
 	div {
 		width: 80%;
@@ -222,45 +209,39 @@ footer {
 
 }
 
-/*** SP: WHO WE ARE ***/
-
-.about-sp-img {
-	img {
-		display: block;
-		margin: 50px auto;
-		width: 50%;
-		max-width: 250px;
+/*** SP: ADVENUTRES ***/
+#adventures-page {
+	article {
+		margin-top: 50px;
 	}
 }
 
-#about-page form {
-	margin-top: 50px;
-}
+/*** SP: WHO WE ARE ***/
 
-#about-page button, #about-page input[type="submit"] {
-	margin-top: 15px;
-	margin-bottom: 100px;
-}
-
-/*** SP: ADVENUTRES ***/
-#adventures-page article {
-	margin-top: 50px;
-}
-
-#adventures-page div  {
-	margin-bottom: 30px;
+#about-page {
+	.circle {
+		margin: 0 auto 30px;
+	}
+	.about-details {
+		margin-bottom: 25px;
+	}
+	h2 {
+		text-align: center;
+		margin-top: -20px;
+		margin-bottom: 25px;
+	}
+	form {
+		margin-top: 25px;
+	}
+	button, input[type="submit"] {
+		margin-top: 15px;
+		margin-bottom: 100px;
+	}
 }
 
 /*** SP: MOUNTAIN TALK ***/
 
-.blog-sp {
-	padding: 0 5%;
-	img {
-		width: 100%
-	}
-}
-
-.post-sp {
+.post-preview {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -293,7 +274,7 @@ footer {
 
 .search-example {
 	height: 50px;
-	width: 300px;
+	width: 100%;
 	margin: 10px auto;
 	background: white;
 	border: 1px solid @River;
@@ -304,10 +285,11 @@ footer {
 	}
 }
 .signup-sidebar {
-	width: 300px;
+	width: 100%;
+	max-width: 400px;
 	margin: 50px auto;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	background: @Himalaya;
 	p {
 		color: @Peace;

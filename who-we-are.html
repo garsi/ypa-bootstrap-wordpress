@@ -28,26 +28,24 @@
   <script src="js/modernizr.js"></script>
 </head>
 <body>
-  <!-- Fixed navbar -->
+  <!-- navbar fixed -->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><img src="img/logo-icon.png"/></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="upcoming-adventures.html">Advenutres</a></li>
-          <li class="active"><a href="#">Who We Are</a></li>
-          <li><a href="mountain-talk.html">Mountain Talk</a></li>
-          <li><a href="the-shop">The Shop</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="img/logo-icon.png" alt="Yoga Peak Adventures Home"/></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="upcoming-adventures.html">Advenutres</a></li>
+        <li class="active"><a href="#">Who We Are</a></li>
+        <li><a href="mountain-talk.html">Mountain Talk</a></li>
+        <li><a href="the-shop">The Shop</a></li>
+      </ul>
     </div>
   </nav>
   <header>
@@ -55,47 +53,52 @@
     <!-- <h1 class="title-sp">PAGE TITLE</h1> -->
   </header>
   <main class="container-fluid" class="subpage" id="about-page">
-    <div class="row">
-      <section class="about-sp"> <!-- start of new row -->
-        <h1>Hi, I'm Erin</h1>
-        <article>
-          <div class="col-sm-4 about-sp-img">
-            <img src="http://placehold.it/200x200"/>
-          </div>
-          <div class="col-sm-8 about-sp-info">
-            <p>You bio… fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow cupcake.</p>
-            <p>Biscuit lollipop liquorice. Candy canes wafer powder chocolate cake candy canes sugar plum cheesecake dessert. Cake jelly beans marshmallow marshmallow cake gingerbread tart liquorice ice cream cheesecake bear claw sweet roll muffin.</p>
-            <p>Topping jelly dessert. Croissant fruitcake powder icing sugar plum cheesecake marzipan gingerbread tart pastry.</p>
-            <p>Donut cupcake danish topping powder cake. Sweet roll muffin topping fruitcake powder gummies candy canes bear claw. Candy canes wafer powder chocolate cake candy canes sugar plum cheesecake dessert.</p>
-          </div>
-          <hr class="line"/>
-        </article>
-      </div> <!-- end of row -->
-
-      <div class="row">  
-        <article class="">
-          <h2>Let's Connect</h2>
-          <p>Some text ... I’d love to hear from you .... social media accounts or send me a message using the form below.</p>
-        </article>
-        <!-- Embed Form -->
-        <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="mc-field-group">
-            <label for="mce-FNAME"></label>
-            <input type="text" value="" placeholder="first name" name="FNAME" class="" id="mce-FNAME">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL"></label>
-            <input type="email" value="" placeholder="email" name="EMAIL" class="required email" id="mce-EMAIL">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL"></label>
-            <input type="text" value="" placeholder="message" name="MESSAGE" class="required email" id="mce-EMAIL">
-          </div>
-        </form>
-        <div class="col-xs-12">
-          <button type="button">Send Message &gt;</button>
+    <section> 
+      <h1>Hi, I'm Erin</h1>
+    </section>
+    
+    <div class="row"> <!-- start of new row -->
+    <section>
+      <article>
+        <div class="col-sm-4">
+          <img class="circle" src="http://placehold.it/200x200"/>
         </div>
-      </section>
+        <div class="col-sm-8 about-details">
+          <p>You bio… fruitcake powder cookie bear claw. Brownie gingerbread jelly. Marshmallow cupcake.</p>
+          <p>Biscuit lollipop liquorice. Candy canes wafer powder chocolate cake candy canes sugar plum cheesecake dessert. Cake jelly beans marshmallow marshmallow cake gingerbread tart liquorice ice cream cheesecake bear claw sweet roll muffin.</p>
+          <p>Topping jelly dessert. Croissant fruitcake powder icing sugar plum cheesecake marzipan gingerbread tart pastry.</p>
+          <p>Donut cupcake danish topping powder cake. Sweet roll muffin topping fruitcake powder gummies candy canes bear claw. Candy canes wafer powder chocolate cake candy canes sugar plum cheesecake dessert.</p>
+        </div>
+        <hr/>
+      </article>
+    </section>
+    </div> <!-- end of row -->
+   
+    <div class="row">  
+    <section>
+      <article>
+        <h2>Let's Connect</h2>
+        <p class="page-intro">Some text ... I’d love to hear from you .... social media accounts or send me a message using the form below.</p>
+      </article>
+      <!-- Embed Form -->
+      <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mc-field-group">
+          <label for="mce-FNAME"></label>
+          <input type="text" value="" placeholder="first name" name="FNAME" class="" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL"></label>
+          <input type="email" value="" placeholder="email" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL"></label>
+          <input type="text" value="" placeholder="message" name="MESSAGE" class="required email" id="mce-EMAIL">
+        </div>
+      </form>
+      <div class="col-xs-12">
+        <button type="button">Send Message &gt;</button>
+      </div>
+    </section>
     </div> <!-- end of row -->
     
     
