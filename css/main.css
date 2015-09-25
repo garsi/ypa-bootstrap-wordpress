@@ -84,6 +84,17 @@ body {
   font-family: 'Raleway', Helvetica, arial, sans-serif;
 }
 /* NAV */
+.navbar-brand a {
+  color: #ffffff;
+  font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
+  font-size: .8em;
+}
+.navbar-brand a:hover,
+.navbar-brand a:focus,
+.navbar-brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
 nav {
   font-family: 'arca_majoraheavy', Helvetica, arial, sans-serif;
   text-transform: uppercase;
@@ -334,7 +345,12 @@ article {
   background-color: #5e688f;
   border-color: #5e688f;
 }
-.navbar-brand > img {
+.navbar-brand p {
+  display: inline;
+  padding-left: 5px;
+}
+.navbar-brand img {
+  display: inline;
   width: 30px;
   height: 30px;
 }
@@ -375,8 +391,7 @@ article {
 .hero-hp img {
   width: 75%;
   max-width: 300px;
-  padding: 6em 0 4em;
-  vertical-align: middle;
+  padding: 7em 0 4em;
 }
 /*** MAIN ***/
 .circle {
@@ -483,6 +498,9 @@ footer .fa {
   padding: 0 10px;
 }
 /*** SUBPAGES ***/
+.header-sp {
+  margin-top: 60px;
+}
 .hero-sp {
   width: 100%;
 }
@@ -597,20 +615,46 @@ footer .fa {
     text-align: center;
   }
   nav {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .navbar ul {
-    width: 98%;
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 400px;
+  }
+  .navbar-brand {
+    height: 65px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-right: 1px solid #85a2c7;
+  }
+  .navbar-brand a {
+    font-size: .5em;
+  }
+  .navbar-brand img {
+    display: block;
     margin: auto;
-    padding-left: 60px;
+  }
+  .navbar ul {
+    width: 95%;
+    margin: auto;
+    padding-top: 15px;
+  }
+  .nav > li > a {
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .hero-hp img {
-    max-width: 400px;
-    padding: 10% 0;
+    max-width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
   .sm-hide {
     display: none;
@@ -657,6 +701,9 @@ footer .fa {
     max-width: 300px;
   }
   /*** SUBPAGES ***/
+  .header-sp {
+    margin-top: 85px;
+  }
   .page-intro {
     width: 85%;
   }
@@ -667,8 +714,8 @@ footer .fa {
   #adventures-page div {
     margin-bottom: 25px;
   }
-  .calendar button,
-  .calendar input[type="submit"] {
+  #adventures-page .calendar button,
+  #adventures-page .calendar input[type="submit"] {
     margin-top: 0px;
     float: left;
     margin-left: 15px;
@@ -728,11 +775,11 @@ footer .fa {
     display: none;
   }
   .navbar ul {
-    width: 80%;
+    width: 75%;
   }
   .hero-hp img {
-    max-width: 500px;
-    padding: 10% 0;
+    max-width: 600px;
+    padding: 0;
   }
   .calendar img {
     max-width: 300px;
@@ -748,10 +795,6 @@ footer .fa {
 /*** LARGE DEVICES: LESS ***/
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .hero-hp img {
-    max-width: 500px;
-    padding: 10% 0;
-  }
   section {
     margin: 50px auto 35px;
   }
@@ -759,6 +802,9 @@ footer .fa {
   article.col-sm-6 {
     margin-top: 40px;
     padding: 0 8%;
+  }
+  .navbar ul {
+    width: 65%;
   }
   .page-intro {
     width: 60%;
